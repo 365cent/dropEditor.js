@@ -1,0 +1,59 @@
+/* a.js Premium Theme Start */
+@import url('https://fonts.cdnfonts.com/css/sf-intermosaic');
+
+body.themed {
+    font-family: 'SF Intermosaic B', sans-serif;
+    background: url(https://a-js.com/index.jpg);
+}
+
+.toggle {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+}
+
+.toggle:after {
+    content: 'Toggle Theme';
+}
+
+.themed a {
+    color: #fff;
+}
+
+.themed a:hover {
+    text-decoration: underline;
+    animation: blink .25s infinite;
+}
+
+.themed .toggle {
+    color: #fff;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    text-decoration: underline overline;
+    text-underline-offset: .3em;
+}
+
+@media (max-width: 40em) {
+    .toggle {
+        position: relative;
+        right: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        text-decoration: none;
+    }
+
+    50% {
+        text-decoration: underline;
+    }
+
+    100% {
+        text-decoration: none;
+    }
+}
+
+/* a.js Premium Theme End */

@@ -1,11 +1,13 @@
 /* a.js Premium Theme Start */
 @import url('https://fonts.cdnfonts.com/css/sf-intermosaic');
 
+/* Themed body */
 body.themed {
     font-family: 'SF Intermosaic B', sans-serif;
     background: url(https://a-js.com/index.jpg);
 }
 
+/* Toggle button */
 .toggle {
     position: fixed;
     top: 1em;
@@ -16,43 +18,76 @@ body.themed {
     content: 'Toggle Theme';
 }
 
-.themed a {
-    color: #fff;
-}
-
-.themed a:hover {
-    text-decoration: underline;
-    animation: blink .25s infinite;
-}
-
-.themed .toggle {
-    color: #fff;
-}
-
 .toggle:hover {
     cursor: pointer;
     text-decoration: underline overline;
     text-underline-offset: .3em;
 }
 
+/* Themed elements */
+.themed a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.themed .toggle {
+    padding-bottom: .3em;
+    color: #fff;
+    background-color: #800080;
+}
+
+.themed > div:first-child {
+    position: relative;
+    font-size: 1.05em;
+    color: #fff; 
+    background-color: rgb(128 128 128 / .8);
+    backdrop-filter: saturate(180%) blur(5px);
+    outline: none;
+    border: none;
+}
+
+.themed > div:first-child:hover {
+    cursor: text;
+}
+
+.themed > div:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 2px solid transparent;
+    inset: 0px;
+    transition: .25s;
+}
+
+.themed > div:first-child:hover:after {
+    border-color: #fff;
+}
+
+.themed > a {
+    padding: .3em .6em;
+    border: 2px solid transparent;
+    transition: .25s;
+}
+
+.themed > a:hover {
+    border-color: #fff;
+}
+.themed > a:nth-child(3) {
+    background-color: #0000FF;
+}
+
+.themed > a:nth-child(4) {
+    background-color: #008000;
+}
+
+.themed > a:nth-child(5) {
+    background-color: #800000;
+}
+
 @media (max-width: 40em) {
     .toggle {
         position: relative;
         right: 0;
-    }
-}
-
-@keyframes blink {
-    0% {
-        text-decoration: none;
-    }
-
-    50% {
-        text-decoration: underline;
-    }
-
-    100% {
-        text-decoration: none;
     }
 }
 

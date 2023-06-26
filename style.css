@@ -4,6 +4,7 @@
 /* Themed body */
 body.themed {
     font-family: 'SF Intermosaic B', sans-serif;
+    margin-top: 1.3em;
     background: url(https://a-js.com/index.jpg);
 }
 
@@ -36,7 +37,7 @@ body.themed {
     background-color: #800080;
 }
 
-.themed>div:first-child {
+.themed>div:nth-child(5) {
     position: relative;
     font-size: 1.05em;
     color: #fff;
@@ -46,11 +47,11 @@ body.themed {
     border: none;
 }
 
-.themed>div:first-child:hover {
+.themed>div:nth-child(5):hover {
     cursor: text;
 }
 
-.themed>div:first-child:after {
+.themed>div:nth-child(5):after {
     content: '';
     display: block;
     position: absolute;
@@ -59,7 +60,7 @@ body.themed {
     transition: .25s;
 }
 
-.themed>div:first-child:hover:after {
+.themed>div:nth-child(5):hover:after {
     border-color: #fff;
 }
 
@@ -73,15 +74,15 @@ body.themed {
     border-color: #fff;
 }
 
-.themed>a:nth-child(3) {
+.themed>a:nth-child(1) {
     background-color: #0000FF;
 }
 
-.themed>a:nth-child(4) {
+.themed>a:nth-child(2) {
     background-color: #008000;
 }
 
-.themed>a:nth-child(5) {
+.themed>a:nth-child(3) {
     background-color: #800000;
 }
 
